@@ -1,0 +1,9 @@
+import org.openhab.core.library.types.*
+
+rule "ExecTest"
+when
+	Item ExecTest received command
+then
+	val results = executeCommandLine('/bin/echo -e "POWR1   \\r" | /bin/nc 192.168.1.28 10002')
+	logInfo("ExecLog", results)
+end

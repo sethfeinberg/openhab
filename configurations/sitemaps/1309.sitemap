@@ -1,0 +1,17 @@
+sitemap home label="1309 N Greenview Ave #3"
+{
+	Frame label="Insteon" {
+		Switch item=Light_MR_Main label="Main Lights"
+		Switch item=Light_Upstairs label="Upstairs Light"
+		Switch item=Outlet_Coffee label="Coffee Outlet"
+		Switch item=Outlet_Volcano label="Volcano Outlet"
+	}
+	Frame label="Home Theater" {
+		Switch item=AV_TV_IR_Power label="TV IR Power"
+		Switch item=AV_TV_IP_Power label="TV IP Power"
+		Switch item=AV_TV_IP_Power2 label="TV IP Power 2"
+		Switch item=AV_Denon_IP_MainPower label="Denon Main Power"
+		Switch item=HTPCMacro label="HTPC Power Macro"
+		Group  item=gMR_MC label="Media Center"
+	}
+}
