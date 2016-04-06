@@ -1,23 +1,24 @@
 /* Groups */
-Group All
+Group gAll
 
 /*  Location Groups */
-Group gMR "Main Room" (All)
-Group gMBR "Master Bedroom" (All)
-Group gGBR "Guest Bedroom" (All)
-Group gRoof "Roof" (All)
+Group gMR "Main Room" (gAll)
+Group gMBR "Master Bedroom" (gAll)
+Group gGBR "Guest Bedroom" (gAll)
+Group gRoof "Roof" (gAll)
 
 /*  Item Groups */
-Group gLights "Lights" (All)
-Group gOutlets "Outlets" (All)
-Group gIsteon "Insteon Devices" (All)
-Group gIR "IR Control" (All)
-Group gIP "IP Control" (All)
+Group gLights "Lights" (gAll)
+Group gOutlets "Outlets" (gAll)
+Group gIsteon "Insteon Devices" (gAll)
+Group gIR "IR Control" (gAll)
+Group gIP "IP Control" (gAll)
 
 /* Misc Groups */
-Group gWeather (All)
-Group gStatus (All)
-Group MyOpenHAB "MyOpenHAB" <web> (All)
+Group gWeather (gAll)
+Group gStatus (gAll)
+Group gMyOpenHAB "MyOpenHAB" <web> (gAll)
+Group gWoL "WoL" <video> (gAll)
 
 /*  Media Center Groups */
 /*   Media Center Location Groups */
@@ -39,6 +40,7 @@ Group gMR_MC_IR_Denon "Denon AVR IR" <video> (gMR_MC, gMR_MC_IR)
 Group gMR_MC_IR_DenonZ2 "Denon AVR Zone 2 IR" <video> (gMR_MC, gMR_MC_IR)
 Group gMR_MC_IP_TV "Sharp TV IP" <video> (gMR_MC, gMR_MC_IP)
 Group gMR_MC_IP_Denon "Denon AVR IP" <video> (gMR_MC, gMR_MC_IP)
+Group gMR_MC_IP_HELPeR "HELPeR IP" <video> (gMR_MC, gMR_MC_IP)
 
 /* Items */
 
@@ -60,8 +62,8 @@ Switch Candles_IR_Power "Candles Power" (gMR_MC_IR, gLights) { exec=">[ON:/usr/b
 Switch Candles_IR_AllPower "Candles All Power" (gMR_MC_IR, gLights) { exec=">[ON:/usr/bin/irsend SEND_ONCE candles KEY_5] >[OFF:/usr/bin/irsend SEND_ONCE sharptv KEY_0]" }
 
 /*  Outlets */
-Switch Outlet_Coffee "Coffee Outlet" (gMR, gOutlets, gInsteon, MyOpenHAB) { insteonplm="2c.18.dd:0x000023#switch" }
-Switch Outlet_Volcano "Volcano Outlet" (gMR, gOutlets, gInsteon, MyOpenHAB) { insteonplm="0e.99.63:0x000023#switch" }
+Switch Outlet_Coffee "Coffee Outlet" <socket> (gMR, gOutlets, gInsteon, MyOpenHAB) { insteonplm="2c.18.dd:0x000023#switch" }
+Switch Outlet_Volcano "Volcano Outlet" <socket> (gMR, gOutlets, gInsteon, MyOpenHAB) { insteonplm="0e.99.63:0x000023#switch" }
 
 /*  Main Room Media Center */
 /*   Main Room Media Center IR */
@@ -300,3 +302,6 @@ Switch AV_Denon_IP_MainInputInternetRadio "Denon Main input(Internet Radio)" (gM
 Switch AV_Denon_IP_MainInputMediaPlayer "Denon Main input(Media Player)" (gMR_MC_IP_Denon) { denon="avr2113#SIMPLAY" }
 Switch AV_Denon_IP_MainInputUSB "Denon Main input(USB)" (gMR_MC_IP_Denon) { denon="avr2113#SIUSB/IPOD" }
 Switch AV_Denon_IP_MainInputNetwork "Denon Main input(Network)" (gMR_MC_IP_Denon) { denon="avr2113#NET" }
+
+/*    HELPeR Controls (IP) */
+Switch AV_HELPeR_IP_WoL "Wake HTPC" (gMR_MC_IP_HELPeR, gWoL) { wol="192.168.1.255#bc:5f:f4:ba:2c:f2" }
