@@ -1,0 +1,1 @@
+Switch AV_HELPeR_IP_WoL "Wake HTPC" (gMR_MC_IP_HELPeR, gWoL) { wol="192.168.1.255#bc:5f:f4:ba:2c:f2" }
