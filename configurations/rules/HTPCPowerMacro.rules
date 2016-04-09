@@ -1,0 +1,21 @@
+import org.openhab.core.library.types.*
+
+rule "HTPC Power Macro ON"
+when
+	Item HTPCMacro received command ON
+then
+  sendCommand(String AV_HELPeR_IP_WoL, String ON)
+  sendCommand(String AV_TV_IP_Power, String ON)
+  sendCommand(String AV_Denon_IP_MainPower, String ON)
+  sendCommand(String AV_TV_IP_InputHDMI4, String ON)
+  sendCommand(String AV_Denon_IP_AudioDirect, String ON)
+  sendCommand(String AV_Denon_IP_MainInputGame, String ON)
+end
+
+rule "HTPC Power Macro OFF"
+when
+	Item HTPCMacro received command OFF
+then
+  sendCommand(String AV_TV_IP_Power, String OFF)
+  sendCommand(String AV_Denon_IP_MainPower, String OFF)
+end

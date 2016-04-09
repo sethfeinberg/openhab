@@ -122,26 +122,28 @@ Switch AV_Denon_IR_Info "Denon Info" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irs
 Switch AV_Denon_IR_Option "Denon Option" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denon KEY_OPTION]", autoupdate="false" }
 Switch AV_Denon_IR_Back "Denon Back" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denon KEY_BACK]", autoupdate="false" }
 Switch AV_Denon_IR_Setup "Denon Setup" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denon KEY_SETUP]", autoupdate="false" }
-Switch AV_Denon_IR_PureAudio "Denon Pure Audio" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denon KEY_YELLOW] >[OFF:/usr/bin/irsend SEND_ONCE denon KEY_YELLOW]" }
-Switch AV_Denon_IR_MovieAudio "Denon Movie Audio" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denon KEY_GREEN] >[OFF:/usr/bin/irsend SEND_ONCE denon KEY_GREEN]" }
-Switch AV_Denon_IR_MusicAudio "Denon Music Audio" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denon KEY_RED] >[OFF:/usr/bin/irsend SEND_ONCE denon KEY_RED]" }
-Switch AV_Denon_IR_GameAudio "Denon Game Audio" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denon KEY_BLUE] >[OFF:/usr/bin/irsend SEND_ONCE denon KEY_BLUE]" }
-Switch AV_Denon_IR_AUXInput "Denon AUX Input" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denon KEY_AUX] >[OFF:/usr/bin/irsend SEND_ONCE denon KEY_AUX]" }
-Switch AV_Denon_IR_BlurayInput "Denon Blu-ray Input" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denon KEY_B] >[OFF:/usr/bin/irsend SEND_ONCE denon KEY_B]" }
-Switch AV_Denon_IR_CBLSATInput "DirecTV Input" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denon KEY_C] >[OFF:/usr/bin/irsend SEND_ONCE denon KEY_C]" }
-Switch AV_Denon_IR_CDInput "Denon CD Input" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denon KEY_CD] >[OFF:/usr/bin/irsend SEND_ONCE denon KEY_CD]" }
-Switch AV_Denon_IR_DVDInput "Blu-ray Input" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denon KEY_DVD] >[OFF:/usr/bin/irsend SEND_ONCE denon KEY_DVD]" }
-Switch AV_Denon_IR_FMInput "Denon FM Input" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denon KEY_RADIO] >[OFF:/usr/bin/irsend SEND_ONCE denon KEY_RADIO]" }
-Switch AV_Denon_IR_GameInput "Denon Game Input" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denon KEY_G] >[ON:/usr/bin/irsend SEND_ONCE denon KEY_G]" }
-Switch AV_Denon_IR_RadioInternetInput "Denon Internet Radio Input" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denon KEY_WWW] >[OFF:/usr/bin/irsend SEND_ONCE denon KEY_WWW]" }
-Switch AV_Denon_IR_iPodUSBInput "Denon iPod/USB Input" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denon KEY_MP3] >[OFF:/usr/bin/irsend SEND_ONCE denon KEY_MP3]" }
-Switch AV_Denon_IR_MediaPlayerInput "Denon Media Player Input" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denon KEY_PC] >[OFF:/usr/bin/irsend SEND_ONCE denon KEY_PC]" }
-Switch AV_Denon_IR_NetworkInput "Denon Network Input" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denon KEY_VIDEO] >[OFF:/usr/bin/irsend SEND_ONCE denon KEY_VIDEO]" }
-Switch AV_Denon_IR_TVInput "TV Input" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denon KEY_TV] >[OFF:/usr/bin/irsend SEND_ONCE denon KEY_TV]" }
 Switch AV_Denon_IR_Sleep "Denon Sleep" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denon KEY_SLEEP]", autoupdate="false" }
 Switch AV_Denon_IR_Next "Denon Next" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denon KEY_NEXT]", autoupdate="false" }
 Switch AV_Denon_IR_Previous "Denon Previous" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denon KEY_PREVIOUS]", autoupdate="false" }
 Switch AV_Denon_IR_PlayPause "Denon Play/Pause" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denon KEY_PLAYPAUSE]", autoupdate="false" }
+/*     Main Room Media Center Denon AVR IR Controls - Audio */
+Switch AV_Denon_IR_PureAudio "Denon Audio(Pure)" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denon KEY_YELLOW] >[OFF:/usr/bin/irsend SEND_ONCE denon KEY_YELLOW]" }
+Switch AV_Denon_IR_MovieAudio "Denon Audio(Movie)" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denon KEY_GREEN] >[OFF:/usr/bin/irsend SEND_ONCE denon KEY_GREEN]" }
+Switch AV_Denon_IR_MusicAudio "Denon Audio(Music)" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denon KEY_RED] >[OFF:/usr/bin/irsend SEND_ONCE denon KEY_RED]" }
+Switch AV_Denon_IR_GameAudio "Denon Audio(Game)" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denon KEY_BLUE] >[OFF:/usr/bin/irsend SEND_ONCE denon KEY_BLUE]" }
+/*     Main Room Media Center Denon AVR IR Controls - Inputs */
+Switch AV_Denon_IR_AUXInput "Denon Input(PS4)" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denon KEY_AUX] >[OFF:/usr/bin/irsend SEND_ONCE denon KEY_AUX]" }
+Switch AV_Denon_IR_BlurayInput "Denon Input(Blu-ray)" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denon KEY_B] >[OFF:/usr/bin/irsend SEND_ONCE denon KEY_B]" }
+Switch AV_Denon_IR_CBLSATInput "Denon Input(Wii)" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denon KEY_C] >[OFF:/usr/bin/irsend SEND_ONCE denon KEY_C]" }
+Switch AV_Denon_IR_CDInput "Denon Input(CD)" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denon KEY_CD] >[OFF:/usr/bin/irsend SEND_ONCE denon KEY_CD]" }
+Switch AV_Denon_IR_DVDInput "Denon Input(DirecTV)" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denon KEY_DVD] >[OFF:/usr/bin/irsend SEND_ONCE denon KEY_DVD]" }
+Switch AV_Denon_IR_FMInput "Denon Input(FM)" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denon KEY_RADIO] >[OFF:/usr/bin/irsend SEND_ONCE denon KEY_RADIO]" }
+Switch AV_Denon_IR_GameInput "Denon Input(HELPeR)" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denon KEY_G] >[ON:/usr/bin/irsend SEND_ONCE denon KEY_G]" }
+Switch AV_Denon_IR_RadioInternetInput "Denon Input(Internet Radio)" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denon KEY_WWW] >[OFF:/usr/bin/irsend SEND_ONCE denon KEY_WWW]" }
+Switch AV_Denon_IR_iPodUSBInput "Denon Input(iPod/USB)" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denon KEY_MP3] >[OFF:/usr/bin/irsend SEND_ONCE denon KEY_MP3]" }
+Switch AV_Denon_IR_MediaPlayerInput "Denon Input(Batcomputer)" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denon KEY_PC] >[OFF:/usr/bin/irsend SEND_ONCE denon KEY_PC]" }
+Switch AV_Denon_IR_NetworkInput "Denon Input(Network)" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denon KEY_VIDEO] >[OFF:/usr/bin/irsend SEND_ONCE denon KEY_VIDEO]" }
+Switch AV_Denon_IR_TVInput "Denon Input(TV Audio)" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denon KEY_TV] >[OFF:/usr/bin/irsend SEND_ONCE denon KEY_TV]" }
 
 /*    Main Room Media Center Denon AVR Zone 2 IR Controls */
 Switch AV_DenonZ2_IR_Power "Denon Zone 2 Power" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denonzone2 KEY_POWER] >[OFF:/usr/bin/irsend SEND_ONCE denonzone2 KEY_POWER]" }
@@ -155,19 +157,20 @@ Switch AV_DenonZ2_IR_Right "Denon Zone 2 Right" (gMR_MC_IR_Denon) { exec=">[ON:/
 Switch AV_DenonZ2_IR_Enter "Denon Zone 2 Enter" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denonzone2 KEY_ENTER]", autoupdate="false" }
 Switch AV_DenonZ2_IR_Option "Denon Zone 2 Option" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denonzone2 KEY_OPTION]", autoupdate="false" }
 Switch AV_DenonZ2_IR_Back "Denon Zone 2 Back" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denonzone2 KEY_BACK]", autoupdate="false" }
-Switch AV_DenonZ2_IR_AUXInput "Denon Zone 2 AUX Input" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denonzone2 KEY_AUX] >[OFF:/usr/bin/irsend SEND_ONCE denonzone2 KEY_AUX]" }
-Switch AV_DenonZ2_IR_BlurayInput "Denon Zone 2 Blu-ray Input" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denonzone2 KEY_B] >[OFF:/usr/bin/irsend SEND_ONCE denonzone2 KEY_B]" }
-Switch AV_DenonZ2_IR_CBLSATInput "DirecTV Input" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denonzone2 KEY_C] >[OFF:/usr/bin/irsend SEND_ONCE denonzone2 KEY_C]" }
-Switch AV_DenonZ2_IR_CDInput "Denon Zone 2 CD Input" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denonzone2 KEY_CD] >[OFF:/usr/bin/irsend SEND_ONCE denonzone2 KEY_CD]" }
-Switch AV_DenonZ2_IR_DVDInput "Blu-ray Input" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denonzone2 KEY_DVD] >[OFF:/usr/bin/irsend SEND_ONCE denonzone2 KEY_DVD]" }
-Switch AV_DenonZ2_IR_FMInput "Denon Zone 2 FM Input" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denonzone2 KEY_RADIO] >[OFF:/usr/bin/irsend SEND_ONCE denonzone2 KEY_RADIO]" }
-Switch AV_DenonZ2_IR_GameInput "Denon Zone 2 Game Input" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denonzone2 KEY_G] >[ON:/usr/bin/irsend SEND_ONCE denonzone2 KEY_G]" }
-Switch AV_DenonZ2_IR_RadioInternetInput "Denon Zone 2 Internet Radio Input" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denonzone2 KEY_WWW] >[OFF:/usr/bin/irsend SEND_ONCE denonzone2 KEY_WWW]" }
-Switch AV_DenonZ2_IR_iPodUSBInput "Denon Zone 2 iPod/USB Input" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denonzone2 KEY_MP3] >[OFF:/usr/bin/irsend SEND_ONCE denonzone2 KEY_MP3]" }
-Switch AV_DenonZ2_IR_MediaPlayerInput "Denon Zone 2 Media Player Input" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denonzone2 KEY_PC] >[OFF:/usr/bin/irsend SEND_ONCE denonzone2 KEY_PC]" }
-Switch AV_DenonZ2_IR_NetworkInput "Denon Zone 2 Network Input" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denonzone2 KEY_VIDEO] >[OFF:/usr/bin/irsend SEND_ONCE denonzone2 KEY_VIDEO]" }
-Switch AV_DenonZ2_IR_TVInput "TV Input" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denonzone2 KEY_TV] >[OFF:/usr/bin/irsend SEND_ONCE denonzone2 KEY_TV]" }
 Switch AV_DenonZ2_IR_Sleep "Denon Zone 2 Sleep" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denonzone2 KEY_SLEEP]", autoupdate="false" }
 Switch AV_DenonZ2_IR_Next "Denon Zone 2 Next" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denonzone2 KEY_NEXT]", autoupdate="false" }
 Switch AV_DenonZ2_IR_Previous "Denon Zone 2 Previous" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denonzone2 KEY_PREVIOUS]", autoupdate="false" }
 Switch AV_DenonZ2_IR_PlayPause "Denon Zone 2 Play/Pause" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denonzone2 KEY_PLAYPAUSE]", autoupdate="false" }
+/*     Main Room Media Center Denon Zone 2AVR IR Controls - Inputs */
+Switch AV_DenonZ2_IR_AUXInput "Denon Zone 2 Input(PS4)" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denonzone2 KEY_AUX] >[OFF:/usr/bin/irsend SEND_ONCE denonzone2 KEY_AUX]" }
+Switch AV_DenonZ2_IR_BlurayInput "Denon Zone 2 Input(Blu-ray)" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denonzone2 KEY_B] >[OFF:/usr/bin/irsend SEND_ONCE denonzone2 KEY_B]" }
+Switch AV_DenonZ2_IR_CBLSATInput "Denon Zone 2 Input(Wii)" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denonzone2 KEY_C] >[OFF:/usr/bin/irsend SEND_ONCE denonzone2 KEY_C]" }
+Switch AV_DenonZ2_IR_CDInput "Denon Zone 2 Input(CD)" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denonzone2 KEY_CD] >[OFF:/usr/bin/irsend SEND_ONCE denonzone2 KEY_CD]" }
+Switch AV_DenonZ2_IR_DVDInput "Denon Zone 2 Input(DirecTV)" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denonzone2 KEY_DVD] >[OFF:/usr/bin/irsend SEND_ONCE denonzone2 KEY_DVD]" }
+Switch AV_DenonZ2_IR_FMInput "Denon Zone 2 Input(FM)" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denonzone2 KEY_RADIO] >[OFF:/usr/bin/irsend SEND_ONCE denonzone2 KEY_RADIO]" }
+Switch AV_DenonZ2_IR_GameInput "Denon Zone 2 Input(HELPeR)" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denonzone2 KEY_G] >[ON:/usr/bin/irsend SEND_ONCE denonzone2 KEY_G]" }
+Switch AV_DenonZ2_IR_RadioInternetInput "Denon Zone 2 Input(Internet Radio)" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denonzone2 KEY_WWW] >[OFF:/usr/bin/irsend SEND_ONCE denonzone2 KEY_WWW]" }
+Switch AV_DenonZ2_IR_iPodUSBInput "Denon Zone 2 Input(iPod/USB)" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denonzone2 KEY_MP3] >[OFF:/usr/bin/irsend SEND_ONCE denonzone2 KEY_MP3]" }
+Switch AV_DenonZ2_IR_MediaPlayerInput "Denon Zone 2 Input(Batcomputer)" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denonzone2 KEY_PC] >[OFF:/usr/bin/irsend SEND_ONCE denonzone2 KEY_PC]" }
+Switch AV_DenonZ2_IR_NetworkInput "Denon Zone 2 Input(Network)" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denonzone2 KEY_VIDEO] >[OFF:/usr/bin/irsend SEND_ONCE denonzone2 KEY_VIDEO]" }
+Switch AV_DenonZ2_IR_TVInput "Denon Zone 2 Input(TV Audio)" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denonzone2 KEY_TV] >[OFF:/usr/bin/irsend SEND_ONCE denonzone2 KEY_TV]" }
