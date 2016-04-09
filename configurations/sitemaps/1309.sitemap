@@ -7,12 +7,8 @@ sitemap home label="1309 N Greenview Ave #3"
 		Switch item=Outlet_Volcano label="Volcano Outlet"
 	}
 	Frame label="Home Theater" {
-		Switch item=AV_TV_IR_Power label="TV IR Power"
-		Switch item=AV_TV_IP_Power label="TV IP Power"
-		Switch item=AV_TV_IP_Power2 label="TV IP Power 2"
-		Switch item=AV_Denon_IP_MainPower label="Denon Main Power"
 		Switch item=HTPCMacro label="HTPC Power Macro"
-		Switch item=AV_HELPeR_IP_WoL label="Wake HTPC"
+		Switch item=AV_HELPeR_IP_WoL label="Wake HTPC" mappings=[ON="Wake"]
 		Group  item=gMR_MC label="Media Center"
 	}
 }

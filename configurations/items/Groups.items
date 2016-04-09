@@ -41,3 +41,19 @@ Group gMR_MC_IR_DenonZ2 "Denon AVR Zone 2 IR" <video> (gMR_MC, gMR_MC_IR)
 Group gMR_MC_IP_TV "Sharp TV IP" <video> (gMR_MC, gMR_MC_IP)
 Group gMR_MC_IP_Denon "Denon AVR IP" <video> (gMR_MC, gMR_MC_IP)
 Group gMR_MC_IP_HELPeR "HELPeR IP" <video> (gMR_MC, gMR_MC_IP)
+
+/*   Master Bedroom Media Center Groups */
+/*    Master Bedroom Media Center Protocol Groups */
+Group gMBR_MC_IR "Master Bedroom Media Center IR" <video> (gIR)
+Group gMBR_MC_IP "Master Bedroom Media Center IP" <video> (gIP)
+
+/*    Master Bedroom Media Center Item Groups */
+Group gMBR_MC_IP_GIR "GIR IP" <video> (gMBR_MC, gMBR_MC_IP)
+
+/*   Roof Media Center Groups */
+/*    Master Bedroom Media Center Protocol Groups */
+Group gRoof_MC_IR "Roof Media Center IR" <video> (gIR)
+Group gRoof_MC_IP "Roof Media Center IP" <video> (gIP)
+
+/*    Roof Media Center Item Groups */
+Group gRoof_MC_IP_RoofMini "Roof Mini IP" <video> (gRoof_MC, gRoof_MC_IP)
