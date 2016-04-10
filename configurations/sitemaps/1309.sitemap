@@ -7,13 +7,13 @@ sitemap home label="1309 N Greenview Ave #3"
 		Switch item=Outlet_Volcano label="Volcano Outlet"
 	}
 	Frame label="Home Theater" {
-		Switch item=HTPCMacro label="HTPC Power Macro"
-		Switch item=OTATVMacro label="OTA TV Power Macro"
-		Switch item=PS4Macro label="PS4 Power Macro"
-		Switch item=DirecTVMacro label="DirecTV Power Macro"
-		Switch item=BlurayMacro label="Bluray Power Macro"
-		Switch item=BatcomputerMacro label="Batcomputer TV Power Macro"
-		Switch item=WiiMacro label="Wii Power Macro"
+		Switch item=HTPCPowerMacro label="HTPC Power Macro"
+		Switch item=OTATVPowerMacro label="OTA TV Power Macro"
+		Switch item=PS4PowerMacro label="PS4 Power Macro"
+		Switch item=DirecTVPowerMacro label="DirecTV Power Macro"
+		Switch item=BlurayPowerMacro label="Bluray Power Macro"
+		Switch item=BatcomputerPowerMacro label="Batcomputer Power Macro"
+		Switch item=WiiPowerMacro label="Wii Power Macro"
 		Switch item=AV_HELPeR_IP_WoL label="Wake HTPC" mappings=[ON="Wake"]
 		Group  item=gMR_MC label="Media Center"
 	}
