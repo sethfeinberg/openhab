@@ -2,7 +2,7 @@ import org.openhab.core.library.types.*
 
 rule "OTA TV Power Macro ON"
 when
-	Item OTATVMacro received command ON
+	Item OTATVPowerMacro received command ON
 then
   sendCommand(AV_TV_IP_Power, ON)
   sendCommand(AV_Denon_IP_MainPower, ON)
@@ -13,7 +13,7 @@ end
 
 rule "OTA TV Power Macro OFF"
 when
-	Item OTATVMacro received command OFF
+	Item OTATVPowerMacro received command OFF
 then
   sendCommand(AV_TV_IP_Power, OFF)
   sendCommand(AV_Denon_IP_MainPower, OFF)
