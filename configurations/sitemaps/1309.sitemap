@@ -8,6 +8,7 @@ sitemap home label="1309 N Greenview Ave #3"
 	}
 	Frame label="Home Theater" {
 		Switch item=HTPCMacro label="HTPC Power Macro"
+		Switch item=OTATVMacro label="Watch OTA"
 		Switch item=AV_HELPeR_IP_WoL label="Wake HTPC" mappings=[ON="Wake"]
 		Group  item=gMR_MC label="Media Center"
 	}
