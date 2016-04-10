@@ -15,6 +15,7 @@ sitemap home label="1309 N Greenview Ave #3"
 		Switch item=BatcomputerPowerMacro label="Batcomputer Power Macro"
 		Switch item=WiiPowerMacro label="Wii Power Macro"
 		Switch item=AV_HELPeR_IP_WoL label="Wake HTPC" mappings=[ON="Wake"]
+		Switch item=AV_Batcomputer_IP_WoL label="Wake Batcomputer" mappings=[ON="Wake"]
 		Group  item=gMR_MC label="Media Center"
 	}
 }
