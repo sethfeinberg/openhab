@@ -1,0 +1,10 @@
+import org.openhab.core.library.types.*
+
+rule "Bluray Macro"
+when
+	Item BlurayPowerMacro received command
+then
+  sendCommand(AV_TV_IP_InputHDMI4, ON)
+  sendCommand(AV_Denon_IP_AudioMovie, ON)
+  sendCommand(AV_Denon_IP_MainInputBluray, ON)
+end
