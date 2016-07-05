@@ -1,8 +1,8 @@
 import org.openhab.core.library.types.*
 
-rule "HTPC Macro"
+rule "HTPC State Macro"
 when
-	Item HTPCPowerMacro received command ON
+	Item HTPCStateMacro received command ON
 then
   sendCommand(AV_HELPeR_IP_WoL, ON)
   sendCommand(AV_TV_IP_InputHDMI4, ON)

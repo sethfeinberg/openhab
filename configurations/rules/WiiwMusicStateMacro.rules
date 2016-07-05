@@ -1,8 +1,8 @@
 import org.openhab.core.library.types.*
 
-rule "Wii Macro"
+rule "Wii w Music State Macro"
 when
-	Item WiiPowerMacro received command
+	Item WiiwMusicStateMacro received command
 then
   sendCommand(AV_TV_IP_InputComponent, ON)
   sendCommand(AV_Denon_IP_AudioMusic, ON)

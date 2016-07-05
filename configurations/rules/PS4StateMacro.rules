@@ -1,10 +1,10 @@
 import org.openhab.core.library.types.*
 
-rule "Wii Macro"
+rule "PS4 State Macro"
 when
-	Item WiiPowerMacro received command
+	Item PS4StateMacro received command
 then
   sendCommand(AV_TV_IP_InputHDMI4, ON)
   sendCommand(AV_Denon_IP_AudioGame, ON)
-  sendCommand(AV_Denon_IP_MainInputCBLSAT, ON)
+  sendCommand(AV_Denon_IP_MainInputAUX, ON)
 end

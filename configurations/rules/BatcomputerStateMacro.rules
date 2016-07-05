@@ -1,8 +1,8 @@
 import org.openhab.core.library.types.*
 
-rule "Batcomputer Macro"
+rule "Batcomputer State Macro"
 when
-	Item BatcomputerPowerMacro received command ON
+	Item BatcomputerStateMacro received command ON
 then
   sendCommand(AV_Batcomputer_IP_WoL, ON)
   sendCommand(AV_TV_IP_InputHDMI4, ON)

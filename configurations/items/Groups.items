@@ -14,11 +14,16 @@ Group gInsteon "Insteon Devices" (gAll)
 Group gIR "IR Control" (gAll)
 Group gIP "IP Control" (gAll)
 
-/* Misc Groups */
+/*  Misc Groups */
 Group gWeather (gAll)
 Group gStatus (gAll)
 Group gMyOpenHAB "MyOpenHAB" <web> (gAll)
 Group gWoL "WoL" <video> (gAll)
+
+/*  Macro Groups */
+Group gMacros (gAll)
+Group gPowerMacros (gMacros)
+Group gStateMacros (gMacros)
 
 /*  Media Center Groups */
 /*   Media Center Location Groups */

@@ -1,24 +1,17 @@
 sitemap home label="1309 N Greenview Ave #3"
 {
-	Frame label="Insteon" {
+	Frame label="Lights" {
+		Switch item=Light_Roof_LEDs label="Roof LEDs"
 		Switch item=Light_MR_Main label="Main Lights"
 		Switch item=Light_Upstairs label="Upstairs Light"
+	}
+	Frame label="Outlets" {
 		Switch item=Outlet_Coffee label="Coffee Outlet"
 		Switch item=Outlet_Volcano label="Volcano Outlet"
 	}
-	Frame label="Lights" {
-		Switch item=Light_Roof_LEDs label="Roof LEDs"
-		Switch item=ExecTest label="LED On Rule"
-		Switch item=ExecTest2 label="LED Off Rule"
-	}
 	Frame label="Home Theater" {
-		Switch item=HTPCPowerMacro label="HTPC Power Macro"
-		Switch item=OTATVPowerMacro label="OTA TV Power Macro"
-		Switch item=PS4PowerMacro label="PS4 Power Macro"
-		Switch item=DirecTVPowerMacro label="DirecTV Power Macro"
-		Switch item=BlurayPowerMacro label="Bluray Power Macro"
-		Switch item=BatcomputerPowerMacro label="Batcomputer Power Macro"
-		Switch item=WiiPowerMacro label="Wii Power Macro"
+		Switch item=gPowerMacros label="Power Macros"
+		Switch item=gStateMacros label="State Macros"
 		Switch item=AV_HELPeR_IP_WoL label="Wake HTPC" mappings=[ON="Wake"]
 		Switch item=AV_Batcomputer_IP_WoL label="Wake Batcomputer" mappings=[ON="Wake"]
 		Group  item=gMR_MC label="Media Center"

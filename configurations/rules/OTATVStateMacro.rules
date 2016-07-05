@@ -1,8 +1,8 @@
 import org.openhab.core.library.types.*
 
-rule "OTA TV Macro"
+rule "OTA TV State Macro"
 when
-	Item OTATVPowerMacro received command
+	Item OTATVStateMacro received command
 then
   sendCommand(AV_TV_IP_InputTV, ON)
   sendCommand(AV_Denon_IP_AudioMusic, ON)
