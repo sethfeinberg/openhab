@@ -4,6 +4,6 @@ rule "ExecTest"
 when
 	Item ExecTest received command
 then
-	val results = executeCommandLine('/bin/echo -e "POWR1   \\r" | /bin/nc 192.168.1.28 10002')
+	val results = executeCommandLine('/usr/bin/ssh openhab@192.168.1.51 /usr/bin/sudo /home/seth/scripts/PSUon.py')
 	logInfo("ExecLog", results)
 end
