@@ -10,8 +10,8 @@ sitemap home label="1309 N Greenview Ave #3"
 		Switch item=Outlet_Volcano label="Volcano Outlet"
 	}
 	Frame label="Home Theater" {
-		Switch item=gPowerMacros label="Power Macros"
-		Switch item=gStateMacros label="State Macros"
+		Group item=gPowerMacros label="Power Macros"
+		Group item=gStateMacros label="State Macros"
 		Switch item=AV_HELPeR_IP_WoL label="Wake HTPC" mappings=[ON="Wake"]
 		Switch item=AV_Batcomputer_IP_WoL label="Wake Batcomputer" mappings=[ON="Wake"]
 		Group  item=gMR_MC label="Media Center"
