@@ -8,7 +8,8 @@ sitemap home label="1309 N Greenview Ave #3"
 	}
 	Frame label="Lights" {
 		Switch item=Light_Roof_LEDs label="Roof LEDs"
-		Switch item=ExecTest label="LED Rule"
+		Switch item=ExecTest label="LED On Rule"
+		Switch item=ExecTest2 label="LED Off Rule"
 	}
 	Frame label="Home Theater" {
 		Switch item=HTPCPowerMacro label="HTPC Power Macro"
