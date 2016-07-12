@@ -1,6 +1,6 @@
 import org.openhab.core.library.types.*
 
-rule "DirecTV Macro"
+rule "DirecTV State Macro"
 when
 	Item DirecTVStateMacro received command
 then
