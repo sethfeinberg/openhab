@@ -4,6 +4,10 @@
 Switch ExecTest
 Switch ExecTest2
 
+/*  Presence Items */
+Switch SethPresence "Seth Presence" (gPresence, gMyOpenHAB)
+Switch RachelPresence "Rachel Presence" (gPresence, gMyOpenHAB)
+
 /*  Macro Items */
 
 /*   Power Macros */

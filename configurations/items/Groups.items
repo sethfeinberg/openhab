@@ -19,6 +19,7 @@ Group gWeather (gAll)
 Group gStatus (gAll)
 Group gMyOpenHAB "MyOpenHAB" <web> (gAll)
 Group gWoL "WoL" <video> (gAll)
+Group gPresence "Presence" (gAll)
 
 /*  Macro Groups */
 Group gMacros (gAll)
