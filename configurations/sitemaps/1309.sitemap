@@ -8,6 +8,8 @@ sitemap home label="1309 N Greenview Ave #3"
 	Frame label="Outlets" {
 		Switch item=Outlet_Coffee label="Coffee Outlet"
 		Switch item=Outlet_Volcano label="Volcano Outlet"
+		Switch item=SethPresence label="Seth Presence"
+		Switch item=RachelPresence label="Rachel Presence"
 	}
 	Frame label="Home Theater" {
 		Slider item=AV_Denon_IP_MainVolume label="Volume"
