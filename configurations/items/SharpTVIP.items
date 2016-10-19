@@ -29,7 +29,7 @@ Switch AV_TV_IP_InputVideo2 "TV input(Video2)" (gMR_MC_IP_TV) { exec=">[*:/var/l
 Switch AV_TV_IP_InputPC "TV input(PC)" (gMR_MC_IP_TV) { exec=">[*:/var/lib/openhab/bin/sharptv.sh IAVD8]", autoupdate="false" }
 /* experimental */
 Dimmer AV_TV_IP_ChannelDimmer "TV Channel [%d]"  (gMR_MC_IP_TV) { exec=">[INCREASE:/var/lib/openhab/bin/sharptv.sh CHUPx] >[DECREASE:/var/lib/openhab/bin/sharptv.sh CHDWx]" }
-//Number AV_TV_IP_ChannelNumber "TV Channel [%d]" (gMR_MC_IP_TV { exec=">[*:/var/lib/openhab/bin/sharptv.sh DA2U*** \r\" | /bin/nc 192.168.1.28 10002]", autoupdate="false" }
+//Number AV_TV_IP_ChannelNumber "TV Channel [%d]" (gMR_MC_IP_TV { exec=">[*:/var/lib/openhab/bin/sharptv.sh DA2U*** \r\" | /bin/nc 10.10.10.63 10002]", autoupdate="false" }
 //Number AV_TV_IP_VolumeNumber "TV Volume [%.1f]" (gMR_MC_IP_TV { exec=">[*:/var/lib/openhab/bin/sharptv.sh VOLM]", autoupdate="false" }
 //Dimmer AV_TV_IP_VolumeDimmer "TV Volume [%d]"  (gMR_MC_IP_TV) { exec=">[INCREASE:/var/lib/openhab/bin/sharptv.sh CHUPx] >[DECREASE:/var/lib/openhab/bin/sharptv.sh CHDWx]" }
 //Switch AV_TV_IP_Power2 "TV Power 2" (gMR_MC_IP_TV) { exec =">[ON:sharptv.script POWR1] >[OFF:sharptv.script POWR0]" }
