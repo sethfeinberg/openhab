@@ -64,7 +64,7 @@ Switch AV_Denon3300_IR_Z2InputCBLSAT "Denon Z2 input(DirecTV)" (gMR_MC_IR_Denon)
 Switch AV_Denon3300_IR_Z2InputCD "Denon Z2 input(CD)" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denon3300z2 KEY_CD] >[OFF:/usr/bin/irsend SEND_ONCE denon3300z2 KEY_CD]" }
 Switch AV_Denon3300_IR_Z2InputDVD "Denon Z2 input(Batcomputer)" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denon3300z2 KEY_DVD] >[OFF:/usr/bin/irsend SEND_ONCE denon3300z2 KEY_DVD]" }
 Switch AV_Denon3300_IR_Z2InputTuner "Denon Z2 input(Tuner)" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denon3300z2 KEY_RADIO] >[OFF:/usr/bin/irsend SEND_ONCE denon3300z2 KEY_RADIO]" }
-Switch AV_Denon3300_IR_Z2InputGame "Denon Z2 input(PS4)" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denon3300z2 KEY_G] >[ON:/usr/bin/irsend SEND_ONCE denon3300z2 KEY_G]" }
+Switch AV_Denon3300_IR_Z2InputGame "Denon Z2 input(PS4)" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denon3300z2 KEY_G] >[OFF:/usr/bin/irsend SEND_ONCE denon3300z2 KEY_G]" }
 Switch AV_Denon3300_IR_Z2InputInternetRadio "Denon Z2 input(Internet Radio)" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denon3300z2 KEY_WWW] >[OFF:/usr/bin/irsend SEND_ONCE denon3300z2 KEY_WWW]" }
 Switch AV_Denon3300_IR_Z2InputiPodUSB "Denon Z2 input(iPod/USB)" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denon3300z2 KEY_MP3] >[OFF:/usr/bin/irsend SEND_ONCE denon3300z2 KEY_MP3]" }
 Switch AV_Denon3300_IR_Z2InputBluetooth "Denon Z2 input(Bluetooth)" (gMR_MC_IR_Denon) { exec=">[ON:/usr/bin/irsend SEND_ONCE denon3300z2 KEY_PC] >[OFF:/usr/bin/irsend SEND_ONCE denon3300z2 KEY_PC]" }

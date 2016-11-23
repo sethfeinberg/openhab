@@ -29,24 +29,22 @@ Switch AV_Denon3300_IP_MainInputGame "Denon Main input(PS4)" (gMR_MC_IP_Denon) {
 Switch AV_Denon3300_IP_MainInputInternetRadio "Denon Main input(Internet Radio)" (gMR_MC_IP_Denon) { denon="avr3300#SIIRADIO" }
 Switch AV_Denon3300_IP_MainInputMediaPlayer "Denon Main input(HELPeR)" (gMR_MC_IP_Denon) { denon="avr3300#SIMPLAY" }
 Switch AV_Denon3300_IP_MainInputUSB "Denon Main input(iPod/USB)" (gMR_MC_IP_Denon) { denon="avr3300#SIUSB/IPOD" }
-Switch AV_Denon3300_IP_MainInputNetwork "Denon Main input(Network)" (gMR_MC_IP_Denon) { denon="avr3300#SINET" }
 /*     Main Room Media Center AVR Controls (IP) - Zone 2 */
 Switch AV_Denon3300_IP_Z2Power "Denon Z2 Power" (gMR_MC_IP_Denon) { denon="avr3300#Z2" }
 Dimmer AV_Denon3300_IP_Z2Volume "Denon Z2 Volume [%.1f]" (gMR_MC_IP_Denon) { denon"avr3300#Z2ZV" }
 Switch AV_Denon3300_IP_Z2Mute "Denon Z2 Mute" (gMR_MC_IP_Denon) { denon="avr3300#Z2MU" }
 /*      Main Room Media Center AVR Controls (IP) - Zone 2 Inputs */
-Switch AV_Denon3300_IP_Z2InputTV "Denon Z2 input(TV Audio)" (gMR_MC_IP_Denon) { denon="avr3300Z2TV" }
-Switch AV_Denon3300_IP_Z2InputAUX1 "Denon Z2 input(AUX1)" (gMR_MC_IP_Denon) { denon="avr3300Z2AUX1" }
-Switch AV_Denon3300_IP_Z2InputAUX2 "Denon Z2 input(WiiU)" (gMR_MC_IP_Denon) { denon="avr3300Z2AUX2" }
-Switch AV_Denon3300_IP_Z2InputOnlineMusic "Denon Z2 input(Online Music)" (gMR_MC_IP_Denon) { denon="avr3300Z2NET" }
-Switch AV_Denon3300_IP_Z2InputBluetooth "Denon Z2 input(Bluetooth)" (gMR_MC_IP_Denon) { denon="avr3300Z2BT" }
-Switch AV_Denon3300_IP_Z2InputBluray "Denon Z2 input(Blu-ray)" (gMR_MC_IP_Denon) { denon="avr3300Z2BD" }
-Switch AV_Denon3300_IP_Z2InputCBLSAT "Denon Z2 input(DirecTV)" (gMR_MC_IP_Denon) { denon="avr3300Z2SAT/CBL" }
-Switch AV_Denon3300_IP_Z2InputCD "Denon Z2 input(CD)" (gMR_MC_IP_Denon) { denon="avr3300Z2CD" }
-Switch AV_Denon3300_IP_Z2InputDVD "Denon Z2 input(Batcomputer)" (gMR_MC_IP_Denon) { denon="avr3300Z2DVD" }
-Switch AV_Denon3300_IP_Z2InputTuner "Denon Z2 input(Tuner)" (gMR_MC_IP_Denon) { denon="avr3300Z2TUNER" }
-Switch AV_Denon3300_IP_Z2InputGame "Denon Z2 input(PS4)" (gMR_MC_IP_Denon) { denon="avr3300Z2GAME" }
-Switch AV_Denon3300_IP_Z2InputInternetRadio "Denon Z2 input(Internet Radio)" (gMR_MC_IP_Denon) { denon="avr3300Z2IRADIO" }
-Switch AV_Denon3300_IP_Z2InputMediaPlayer "Denon Z2 input(HELPeR)" (gMR_MC_IP_Denon) { denon="avr3300Z2MPLAY" }
-Switch AV_Denon3300_IP_Z2InputUSB "Denon Z2 input(iPod/USB)" (gMR_MC_IP_Denon) { denon="avr3300Z2USB/IPOD" }
-Switch AV_Denon3300_IP_Z2InputNetwork "Denon Z2 input(Network)" (gMR_MC_IP_Denon) { denon="avr3300Z2NET" }
+Switch AV_Denon3300_IP_Z2InputTV "Denon Z2 input(TV Audio)" (gMR_MC_IP_Denon) { denon="avr3300#Z2TV" }
+Switch AV_Denon3300_IP_Z2InputAUX1 "Denon Z2 input(AUX1)" (gMR_MC_IP_Denon) { denon="avr3300#Z2AUX1" }
+Switch AV_Denon3300_IP_Z2InputAUX2 "Denon Z2 input(WiiU)" (gMR_MC_IP_Denon) { denon="avr3300#Z2AUX2" }
+Switch AV_Denon3300_IP_Z2InputOnlineMusic "Denon Z2 input(Online Music)" (gMR_MC_IP_Denon) { denon="avr3300#Z2NET" }
+Switch AV_Denon3300_IP_Z2InputBluetooth "Denon Z2 input(Bluetooth)" (gMR_MC_IP_Denon) { denon="avr3300#Z2BT" }
+Switch AV_Denon3300_IP_Z2InputBluray "Denon Z2 input(Blu-ray)" (gMR_MC_IP_Denon) { denon="avr3300#Z2BD" }
+Switch AV_Denon3300_IP_Z2InputCBLSAT "Denon Z2 input(DirecTV)" (gMR_MC_IP_Denon) { denon="avr3300#Z2SAT/CBL" }
+Switch AV_Denon3300_IP_Z2InputCD "Denon Z2 input(CD)" (gMR_MC_IP_Denon) { denon="avr3300#Z2CD" }
+Switch AV_Denon3300_IP_Z2InputDVD "Denon Z2 input(Batcomputer)" (gMR_MC_IP_Denon) { denon="avr3300#Z2DVD" }
+Switch AV_Denon3300_IP_Z2InputTuner "Denon Z2 input(Tuner)" (gMR_MC_IP_Denon) { denon="avr3300#Z2TUNER" }
+Switch AV_Denon3300_IP_Z2InputGame "Denon Z2 input(PS4)" (gMR_MC_IP_Denon) { denon="avr3300#Z2GAME" }
+Switch AV_Denon3300_IP_Z2InputInternetRadio "Denon Z2 input(Internet Radio)" (gMR_MC_IP_Denon) { denon="avr3300#Z2IRADIO" }
+Switch AV_Denon3300_IP_Z2InputMediaPlayer "Denon Z2 input(HELPeR)" (gMR_MC_IP_Denon) { denon="avr3300#Z2MPLAY" }
+Switch AV_Denon3300_IP_Z2InputUSB "Denon Z2 input(iPod/USB)" (gMR_MC_IP_Denon) { denon="avr3300#Z2USB/IPOD" }
