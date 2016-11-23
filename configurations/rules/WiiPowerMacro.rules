@@ -1,14 +1,14 @@
 import org.openhab.core.library.types.*
 
-rule "Wii Power Macro ON"
+rule "WiiU Power Macro ON"
 when
-	Item WiiPowerMacro received command ON
+	Item WiiUPowerMacro received command ON
 then
   sendCommand(AV_TV_IP_Power, ON)
-  sendCommand(AV_Denon_IP_MainPower, ON)
+  sendCommand(AV_Denon3300_IP_MainPower, ON)
   sendCommand(AV_TV_IP_InputHDMI4, ON)
-  sendCommand(AV_Denon_IP_AudioGame, ON)
-  sendCommand(AV_Denon_IP_MainInputCBLSAT, ON)
+  sendCommand(AV_Denon3300_IP_AudioGame, ON)
+  sendCommand(AV_Denon3300_IP_MainInputAUX2, ON)
 end
 
 rule "Wii Power Macro OFF"
@@ -16,5 +16,5 @@ when
 	Item WiiPowerMacro received command OFF
 then
   sendCommand(AV_TV_IP_Power, OFF)
-  sendCommand(AV_Denon_IP_MainPower, OFF)
+  sendCommand(AV_Denon3300_IP_MainPower, OFF)
 end

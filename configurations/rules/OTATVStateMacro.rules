@@ -5,6 +5,6 @@ when
 	Item OTATVStateMacro received command
 then
   sendCommand(AV_TV_IP_InputTV, ON)
-  sendCommand(AV_Denon_IP_AudioMusic, ON)
-  sendCommand(AV_Denon_IP_MainInputTV, ON)
+  sendCommand(AV_Denon3300_IP_AudioMusic, ON)
+  sendCommand(AV_Denon3300_IP_MainInputTV, ON)
 end

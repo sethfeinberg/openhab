@@ -6,6 +6,6 @@ when
 then
   sendCommand(AV_Batcomputer_IP_WoL, ON)
   sendCommand(AV_TV_IP_InputHDMI4, ON)
-  sendCommand(AV_Denon_IP_AudioDirect, ON)
-  sendCommand(AV_Denon_IP_MainInputMediaPlayer, ON)
+  sendCommand(AV_Denon3300_IP_AudioDirect, ON)
+  sendCommand(AV_Denon3300_IP_MainInputDVD, ON)
 end

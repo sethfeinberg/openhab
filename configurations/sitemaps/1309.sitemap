@@ -10,7 +10,7 @@ sitemap home label="1309 N Greenview Ave #3"
 		Switch item=Outlet_Volcano label="Volcano Outlet"
 	}
 	Frame label="Home Theater" {
-		Slider item=AV_Denon_IP_MainVolume label="Volume"
+		Slider item=AV_Denon3300_IP_MainVolume label="Volume"
 		Group item=gPowerMacros label="Power Macros"
 		Group item=gStateMacros label="State Macros"
 		Switch item=AV_HELPeR_IP_WoL label="Wake HTPC" mappings=[ON="Wake"]
