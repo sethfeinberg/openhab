@@ -1,4 +1,4 @@
-sitemap 1309 label="1309 N Greenview Ave #3"
+sitemap home label="1309 N Greenview Ave #3"
 {
 	Frame label="Lights" {
 		Switch item=Light_Roof_LEDs label="Roof LEDs"
