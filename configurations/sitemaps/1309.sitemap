@@ -16,8 +16,9 @@ sitemap home label="1309 N Greenview Ave #3"
 		Switch item=AV_HELPeR_IP_WoL label="Wake HTPC" mappings=[ON="Wake"]
 		Group item=gMR_MC label="Media Center"
 	}
-	Frame label="Tests" {
+/*	Frame label="Tests" {
 	Switch item=ExecTest label="PSUonTest"
 	Switch item=ExecTest2 label="PSUoffTest"
 	}
+*/
 }
