@@ -1,4 +1,4 @@
-sitemap home label="1309 N Greenview Ave #3"
+sitemap 1309 label="1309 N Greenview Ave #3"
 {
 	Frame label="Lights" {
 		Switch item=Light_Roof_LEDs label="Roof LEDs"
@@ -15,5 +15,9 @@ sitemap home label="1309 N Greenview Ave #3"
 		Group item=gStateMacros label="State Macros"
 		Switch item=AV_HELPeR_IP_WoL label="Wake HTPC" mappings=[ON="Wake"]
 		Group item=gMR_MC label="Media Center"
+	}
+	Frame label="Tests" {
+	Switch item=ExecTest label="PSUonTest"
+	Switch item=ExecTest2 label="PSUoffTest"
 	}
 }
